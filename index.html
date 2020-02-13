@@ -8,6 +8,11 @@
     <!-- Bootstrap CSS -->
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
     <link href="./Login Page_files/bootstrap.min.css" rel="stylesheet">
+    <style>
+      p, li {
+        font-size: 20px;
+      }
+    </style>
 
     <title>Login Page</title>
   </head>
@@ -15,66 +20,82 @@
     <div class="container-fluid">
       <div class="row">
 
-        <div class="col-lg-4" style="min-height: 100vh;display: block; background: #2A3F54;">
+        <div class="col-lg-4 text-center" style="min-height: 100vh; background: #2A3F54;">
           <div class="py-4 text-center">
           <br>
           <br>
-
           <img src="./Login Page_files/logo_bssn.png" class="img-fluid mx-auto" alt="Responsive image">
-          <br>
-          <br>
           </div>
-          <form class="px-5" method="POST" action="http://127.0.0.1:8000/login">
-          <input type="hidden" name="_token" value="lX8lzOpojrcsXKETi8PO8rSVA2iZPrOeEP5owHRi">            <h2 class="text-center mb-4 mt-5" style="color:white;">Login Instansi</h2>
-            <br>
-                      
-            <div class="form-group">
-							<input placeholder="Username" id="login" type="text" class="form-control" name="login" value="" required="" autofocus="">
-               						</div>
-						<div class="form-group">
-              <input id="password" type="password" class="form-control " name="password" placeholder="Password" required="" autocomplete="current-password">
-              						</div>
-						<div class="text-center mw-100 ">
-							<!-- <button class="btn btn-info border   btn-md btn-block">
-								Login
-              </button> -->
-              <input type="hidden" name="key" value="f611806048087a62f885effdaab894569269fb81">
-                <button class="btn border btn-md btn-block submit" type="submit" style="border-color: white; background: #2A3F54; color:white;">Log in</button>
-            </div>
-          </form>
+          <div style="height: 50%; width: 60%; position:absolute;
+                      margin-left:auto;
+                      margin-right:auto;
+                      margin-top:auto;
+                      margin-bottom:auto;
+                      left:0;
+                      right:0;
+                      top:0;
+                      bottom:0">
+             
+             <form class="px-5" method="POST" action="http://127.0.0.1:8000/login">
+             <input type="hidden" name="_token" value="lX8lzOpojrcsXKETi8PO8rSVA2iZPrOeEP5owHRi">
+             <p class="text-center h3 font-weight-lighter mb-4 mt-5" style="color:white;">Login Instansi</p>
+               <br>
+                         
+               <div class="form-group">
+                 <input placeholder="Username" id="login" type="text" class="form-control" name="login" value="" required="" autofocus="">
+                              </div>
+               <div class="form-group">
+                 <input id="password" type="password" class="form-control " name="password" placeholder="Password" required="" autocomplete="current-password">
+                             </div>
+               <div class="text-center mw-100 ">
+                 <!-- <button class="btn btn-info border   btn-md btn-block">
+                   Login
+                 </button> -->
+                 <input type="hidden" name="key" value="f611806048087a62f885effdaab894569269fb81">
+                   <button class="btn btn-info btn-md btn-block" type="submit" >Log in</button>
+               </div>
+             </form>
+          </div>
          
         </div>
         <div class="col-lg-8">
           <div class="row">
-            
-            <div class="col-lg-12 ">
-            <br>
-            <div class="text-center" style="background: #2A3F54;">
-            <br>
-              <p class="h2" style="color:white;">INSTRUMEN PENGUKURAN TINGKAT MATURITAS PENANGANAN INSIDEN KEAMANAN SIBER</p>
-              <br>
-            </div>
-              <hr class="border border-info">
-              <p>Instrumen Pengukuran Maturitas Penanganan Insiden Siber dan Sandi ini adalah alat untuk memetakan tingkat kesiapan organisasi terhadap kemampuan penanganan  insiden keamanan siber mereka. Instrumen ini digunakan  untuk memetakan keadaan kesiapan organisasi untuk dapat menanggapi insiden keamanan siber dengan cara yang cepat, efektif dan aman.</p>
-              <p>Penggunaan Instrumen ini dianjurkan untuk dilakukan oleh Pejabat yang secara langsung bertanggungjawab dan berwenang dalam penanganan insiden keamanan siber.</p>
-    
-              <div class="row">
-                <div class="col-lg-6">
-                  <p>Instrumen ini berupa alat pemetaan terhadap model kesiapan yang  merujuk pada CREST - CSIR Cyber Security Incident Response guide ver. 1.0, berupa sejumlah pertanyaan yang didasarkan pada 15 langkah dalam 3 fase proses penanganan insiden keamanan siber</p>
-                  <p>Proses pemetaan tingkat kesiapan penanganan insiden keamanan siber dimulai dengan mengisi sejumlah pertanyaan untuk tiap Fase berikut :</p>
-                  <ul>
-                    <li>Fase 1. Persiapan</li>
-                    <li>Fase 2. Respon/ Tanggap Insiden Siber</li>
-                    <li>Fase 3. Tindak Lanjut</li>
-                  </ul>
-                </div>
-    
-                <div class="col-lg-6">
-                  <img src="./Login Page_files/instrumen.jpg" class="img-fluid" alt="Responsive image" style="height: auto; max-width: 100%;">
-                </div>
-    
+            <div class="container-fluid">
+
+              <div class="col-lg-12">
+              <div class="text-center" style="background: #2A3F54; width: 100%; position:relative;
+              margin-left:auto;
+              margin-right:auto;
+              
+              left:0;
+              right:0;
+              ">
+                <p class="h2" style="background-color:#2A3F54; color: white; padding-top: 10px; padding-bottom: 10px;">INSTRUMEN PENGUKURAN TINGKAT MATURITAS PENANGANAN INSIDEN KEAMANAN SIBER</p>
               </div>
-            </div>			
+                <hr class="border border-info">
+                <p class="font-weight-normal">Instrumen Pengukuran Maturitas Penanganan Insiden Siber dan Sandi ini adalah alat untuk memetakan tingkat kesiapan organisasi terhadap kemampuan penanganan  insiden keamanan siber mereka. Instrumen ini digunakan  untuk memetakan keadaan kesiapan organisasi untuk dapat menanggapi insiden keamanan siber dengan cara yang cepat, efektif dan aman.</p>
+                <p>Penggunaan Instrumen ini dianjurkan untuk dilakukan oleh Pejabat yang secara langsung bertanggungjawab dan berwenang dalam penanganan insiden keamanan siber.</p>
+                <hr class="border border-info">
+      
+                <div class="row">
+                  <div class="col-lg-6">
+                    <p>Instrumen ini berupa alat pemetaan terhadap model kesiapan yang  merujuk pada CREST - CSIR Cyber Security Incident Response guide ver. 1.0, berupa sejumlah pertanyaan yang didasarkan pada 15 langkah dalam 3 fase proses penanganan insiden keamanan siber</p>
+                    <p>Proses pemetaan tingkat kesiapan penanganan insiden keamanan siber dimulai dengan mengisi sejumlah pertanyaan untuk tiap Fase berikut :</p>
+                    <ul>
+                      <li>Fase 1. Persiapan</li>
+                      <li>Fase 2. Respon/ Tanggap Insiden Siber</li>
+                      <li>Fase 3. Tindak Lanjut</li>
+                    </ul>
+                  </div>
+      
+                  <div class="col-lg-6">
+                    <img src="./Login Page_files/instrumen.jpg" class="img-fluid" alt="Responsive image" style="height: auto; max-width: 100%;">
+                  </div>
+      
+                </div>
+              </div>			
+            </div>
+            
           </div>
           <div class="row"></div>
   
