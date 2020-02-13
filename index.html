@@ -1,45 +1,59 @@
-<!doctype html>
-<html lang="en">
-  <head>
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://127.0.0.1:8000/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <!-- Required meta tags -->
-    <meta charset="utf-8">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+    <link href="./Login Page_files/bootstrap.min.css" rel="stylesheet">
 
-    <title>Hello, world!</title>
+    <title>Login Page</title>
   </head>
   <body>
     <div class="container-fluid">
       <div class="row">
 
-        <div class="col-lg-4 bg-info mw-100 pt-5 px-5" style="min-height: 100vh;display: block;">
-          <img src="bssn.png" class="img-fluid mx-auto d-block" alt="Responsive image">
-          <form class="px-5">
-            <h2 class="text-center text-white mb-4 mt-5">Login Instansi</h2>            
+        <div class="col-lg-4" style="min-height: 100vh;display: block; background: #2A3F54;">
+          <div class="py-4 text-center">
+          <br>
+          <br>
+
+          <img src="./Login Page_files/logo_bssn.png" class="img-fluid mx-auto" alt="Responsive image">
+          <br>
+          <br>
+          </div>
+          <form class="px-5" method="POST" action="http://127.0.0.1:8000/login">
+          <input type="hidden" name="_token" value="lX8lzOpojrcsXKETi8PO8rSVA2iZPrOeEP5owHRi">            <h2 class="text-center mb-4 mt-5" style="color:white;">Login Instansi</h2>
+            <br>
+                      
             <div class="form-group">
-							<input placeholder="Username" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-						</div>
+							<input placeholder="Username" id="login" type="text" class="form-control" name="login" value="" required="" autofocus="">
+               						</div>
 						<div class="form-group">
-							<input placeholder="Password" type="password" class="form-control" id="exampleInputPassword1">
-						</div>
+              <input id="password" type="password" class="form-control " name="password" placeholder="Password" required="" autocomplete="current-password">
+              						</div>
 						<div class="text-center mw-100 ">
-							<button class="btn btn-info border   btn-md btn-block">
+							<!-- <button class="btn btn-info border   btn-md btn-block">
 								Login
-							</button>
+              </button> -->
+              <input type="hidden" name="key" value="f611806048087a62f885effdaab894569269fb81">
+                <button class="btn border btn-md btn-block submit" type="submit" style="border-color: white; background: #2A3F54; color:white;">Log in</button>
             </div>
           </form>
-          <div class="text-white text-center px-5" style="margin-top: 50%;">
-            <a class="text-center">Contact us : pped@bssn.go.id</a> 
-            <hr class="border-white">
-          </div>
+         
         </div>
         <div class="col-lg-8">
           <div class="row">
             
-            <div class="col-lg-12 mt-5 px-5">
-              <p class="h1 text-center mb-5 w-100 p-3 bg-info text-white shadow">INSTRUMEN PENGUKURAN TINGKAT MATURITAS PENANGANAN INSIDEN KEAMANAN SIBER</p>
+            <div class="col-lg-12 ">
+            <br>
+            <div class="text-center" style="background: #2A3F54;">
+            <br>
+              <p class="h2" style="color:white;">INSTRUMEN PENGUKURAN TINGKAT MATURITAS PENANGANAN INSIDEN KEAMANAN SIBER</p>
+              <br>
+            </div>
               <hr class="border border-info">
               <p>Instrumen Pengukuran Maturitas Penanganan Insiden Siber dan Sandi ini adalah alat untuk memetakan tingkat kesiapan organisasi terhadap kemampuan penanganan  insiden keamanan siber mereka. Instrumen ini digunakan  untuk memetakan keadaan kesiapan organisasi untuk dapat menanggapi insiden keamanan siber dengan cara yang cepat, efektif dan aman.</p>
               <p>Penggunaan Instrumen ini dianjurkan untuk dilakukan oleh Pejabat yang secara langsung bertanggungjawab dan berwenang dalam penanganan insiden keamanan siber.</p>
@@ -56,7 +70,7 @@
                 </div>
     
                 <div class="col-lg-6">
-                  <img src="image.jpg" class="img-fluid" alt="Responsive image">
+                  <img src="./Login Page_files/instrumen.jpg" class="img-fluid" alt="Responsive image" style="height: auto; max-width: 100%;">
                 </div>
     
               </div>
@@ -70,8 +84,9 @@
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  </body>
-</html>
+     <!-- jQuery -->
+     <script src="./Login Page_files/jquery.min.js.download"></script>
+    <!-- Bootstrap -->
+    <script src="./Login Page_files/bootstrap.min.js.download"></script>
+  
+</body></html>
